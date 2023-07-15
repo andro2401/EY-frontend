@@ -3,15 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>EY - Frontend zadatak</title>
   </head>
   <body>
-    <picture>
-      <img src="./images/headline_image.png" alt="Main image" />
-    </picture>
+    <section class="hero">
+      <picture>
+        <img
+          src="./images/headline_image.png"
+          alt="Main image"
+          width="2000"
+          height="418"
+        />
+      </picture>
+    </section>
 
+    <section class="about">
+      <div class="container">
+        <h1>Daily pet facts - Love!</h1>
+        <div class="wrapper">
+          <div class="img-wrapper">
+            <img
+              src="./images/cat_image.png"
+              alt="Cat image"
+              width="445"
+              height="445"
+            />
+          </div>
+          <div class="content">
+            <h2>The Cat</h2>
+            <p>
+              Cats have been domesticated for around 4,000 years. While they
+              were once valued for their hunting abilities, they are now valued
+              for their companionship and loving behaviour.
+            </p>
+            <p>
+              While not well known, the collective nouns used for cats and
+              kittens are a clowder of cats and a kindle of kittens
+            </p>
+            <p>
+              They differ from large cats such as lions and tigers because they
+              are naturally active at night and can purr.
+            </p>
+            <p>Cats are now the most popular pet in the UK and in the US.</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="content">
+            <h2>The Dog</h2>
+            <p>
+              Domestic dogs have been companions to people for more than 15,000
+              years. There are more than 400 different breeds of dogs. PAWS or
+              your local animal shelter has a wide variety of breeds available
+              for adoption. The most popular types are the non-pedigree. They
+              are extra special because they are one-of-a-kind!
+            </p>
+            <p>
+              In general, small dogs live longer than large dogs. Small dogs
+              such as terriers may live 20 years. Giant dogs like Great Danes
+              may live eight years. The average lifespan for a mixed breed dog
+              is 13 to 14 years. By making sure dogs have good food, regular
+              veterinary care, shelter and a loving family, they will live
+              longer, healthier lives.
+            </p>
+          </div>
+          <div class="img-wrapper">
+            <img
+              src="./images/dog_image.png"
+              alt="Cat image"
+              width="445"
+              height="445"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS SCRIPTS AND PLUGINS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <script src="./js/swipebox.js" defer></script>
     <script src="./js/app.js" defer></script>
   </body>
 </html>
