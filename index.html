@@ -9,10 +9,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/swipebox.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>EY - Frontend zadatak</title>
@@ -59,7 +56,7 @@
             <p>Cats are now the most popular pet in the UK and in the US.</p>
           </div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper reverse">
           <div class="content">
             <h2>The Dog</h2>
             <p>
@@ -90,6 +87,49 @@
       </div>
     </section>
 
+    <section class="slideshow">
+      <h2>Gallery</h2>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img
+                src="./images/swiper_image.png"
+                alt="dog image"
+                width="730"
+                height="435"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img
+                src="./images/swiper_image2.png"
+                alt="dog image"
+                width="730"
+                height="435"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrap">
+              <img
+                src="./images/swiper_image1.png"
+                alt="hot dog image"
+                width="730"
+                height="435"
+              />
+            </div>
+          </div>
+          ...
+        </div>
+        <div class="swiper-prev swiper-button"></div>
+        <div class="swiper-next swiper-button"></div>
+      </div>
+    </section>
+
     <!-- JS SCRIPTS AND PLUGINS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script
@@ -97,7 +137,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/swipebox.js" defer></script>
     <script src="./js/app.js" defer></script>
   </body>
