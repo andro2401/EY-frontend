@@ -25,4 +25,25 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".swipebox").swipebox();
+
+  $("#contactForm").submit(function (event) {
+    event.preventDefault();
+    if (this.checkValidity()) {
+      $(this).hide();
+      $(".response").show();
+    }
+  });
+
+  $(".ok-btn").on("click", function (e) {
+    e.preventDefault();
+    $(this).parents(".response").hide();
+    $("#contactForm").show();
+  });
+
+  $(".cookie-btn").on("click", function (e) {
+    e.preventDefault();
+    $(this).parents(".cookie").hide();
+  });
 });
